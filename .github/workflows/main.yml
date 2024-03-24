@@ -1,0 +1,15 @@
+name: Self-Hosted Runner Example
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print message
+        run: echo "This job is running on the self-hosted runner!"
