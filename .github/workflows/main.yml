@@ -14,6 +14,6 @@ jobs:
         run: npm install -g @stoplight/prism-cli
 
       - name: Print message
-        run: prism mock https://raw.githack.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore-expanded.yaml
+        run: prism mock pet.json
 
         
