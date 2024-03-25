@@ -1,0 +1,17 @@
+name: Self-Hosted Runner Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print message
+        run: npm install -g @stoplight/prism-cli
+
+      - name: Print message
+        run: prism mock petstore.yaml
