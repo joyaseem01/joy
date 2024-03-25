@@ -1,4 +1,4 @@
-name: Self-Hosted Runner Example
+name: Self-Hosted Runner Example yaml
 
 on:
   workflow_dispatch:
